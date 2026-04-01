@@ -1,0 +1,3 @@
+# Security & stability defaults
+# Requires pnpm >= 10.16
+minimumReleaseAge: 10080  # 7 days delay before installing newly published packages
