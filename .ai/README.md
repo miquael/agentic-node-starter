@@ -11,6 +11,7 @@ This directory is the "Source of Truth" for AI agents (like Antigravity, Cursor,
 - **`.cursorrules`**: Context-specific rules for the Cursor IDE.
 - **`CLAUDE.md`**: Operations and style guides for Claude-based agents.
 - **`GEMINI.md`**: Context and reasoning instructions for Gemini-based agents.
+- **`HUMAN.md`**: Workflow and roles for the Human-in-the-Loop processes.
 
 ## Why this exists?
 
