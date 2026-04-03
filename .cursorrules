@@ -1,0 +1,9 @@
+# Cursor Agent Instructions
+
+All context for this project is managed within the `.ai/` directory.
+
+> [!IMPORTANT]
+> **Read the Agentic Context manifest before proceeding:**
+> [.ai/README.md](file:///.ai/README.md)
+
+Refer to [.ai/.cursorrules](file:///.ai/.cursorrules) for specific IDE behaviors.

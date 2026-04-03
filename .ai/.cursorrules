@@ -1,0 +1,17 @@
+## Agent Instruction: Cursor
+
+You are an AI assistant in the Cursor IDE. This project is a standardized Node.js template designed for modularity, security, and performance.
+
+### Project Context
+- **Base Architecture**: Node.js, Vercel-ready, pnpm.
+- **Rules Directory**: All architectural context lives in `.ai/docs/` and `.ai/specs/`.
+
+### Development Standards
+1. **ESM Only**: Use ES modules (.js, .ts). No CommonJS.
+2. **Pnpm Only**: Use `pnpm` for all package management.
+3. **Style**: Prefer functional programming and clean, descriptive naming.
+4. **Context**: Before making significant changes, check `.ai/docs/steering.md` for project constraints.
+
+### Task Workflow
+- Reference `.ai/docs/tasks.md` to track progress.
+- Update `.ai/docs/decisions.md` when proposing architectural changes.

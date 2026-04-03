@@ -1,0 +1,15 @@
+{
+  "docs_path": ".ai/docs",
+  "specs_path": ".ai/specs",
+  "agent_instructions": ".ai/docs/steering.md",
+  "glossary": ".ai/glossary.md",
+  "project_rules": [
+    ".ai/.cursorrules",
+    ".ai/CLAUDE.md"
+  ],
+  "preferences": {
+    "show_plan_first": true,
+    "prefer_pnpm": true,
+    "prefer_esm": true
+  }
+}

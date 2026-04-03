@@ -1,0 +1,7 @@
+{
+  "docs_path": ".ai/docs",
+  "specs_path": ".ai/specs",
+  "agent_instructions": ".ai/docs/steering.md",
+  "glossary": ".ai/glossary.md",
+  "redirect": ".ai/.antigravity.json"
+}
