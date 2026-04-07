@@ -3,7 +3,7 @@
 ## Standards & Constraints
 - **Commands**: `pnpm install`, `pnpm run dev`, `pnpm run build`, `pnpm run lint`, `pnpm run test`
 - **Architecture**: ESM modules only (.js, .ts). No CommonJS.
-- **Node Environment**: Strictly Node 22.22.2
+- **Node Environment**: Strictly Node 24.14.1
 - **Package Manager**: Strictly `pnpm` (no `npm` or `yarn`). 
 - **Security**: Local setup uses `mythic-pnpm-only-security-setup.sh`. Always check for this.
 - **Constraints**: Project constraints must adhere to `.ai/docs/steering.md`.

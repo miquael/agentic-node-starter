@@ -124,7 +124,7 @@ This ensures:
 Include both `.nvmrc` and `.node-version` files in the project root with the same Node version:
 
 ```
-22.22.2
+24.14.1
 ```
 
 `.nvmrc` is read by nvm. `.node-version` is read by other version managers (fnm, mise, volta). Including both ensures compatibility regardless of which tool contributors use.
@@ -133,15 +133,15 @@ The `engines` field in `package.json` enforces this at install time:
 ```json
 {
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   }
 }
 ```
 
 Combined with `engine-strict=true` in `.npmrc`, pnpm will refuse to install if the Node version is wrong.
 
-> **Why `22.x` instead of `22.22.2` or `^22.22.2`?**
-> Vercel explicitly prefers the `22.x` syntax to keep builds within the Node 22 major branch. Since Vercel's instances might run a slightly different patch version (though typically around `22.22.2`), using an exact version or strict caret range when combined with `engine-strict=true` can cause `pnpm` to reject the install on Vercel if there is a mismatch. Using `22.x` seamlessly satisfies local strict versions (like `22.22.2` from `.nvmrc`) while explicitly allowing Vercel's environment to resolve without breaking the build.
+> **Why `24.x` instead of `24.14.1` or `^24.14.1`?**
+> Vercel explicitly prefers the `24.x` syntax to keep builds within the Node 24 major branch. Since Vercel's instances might run a slightly different patch version (though typically around `24.14.1`), using an exact version or strict caret range when combined with `engine-strict=true` can cause `pnpm` to reject the install on Vercel if there is a mismatch. Using `24.x` seamlessly satisfies local strict versions (like `24.14.1` from `.nvmrc`) while explicitly allowing Vercel's environment to resolve without breaking the build.
 
 ---
 

@@ -14,7 +14,7 @@ This document describes the high-level architecture of the project, defining how
 - **Schemas**: Data structure definitions (see `schema.md`).
 
 ## Technical Stack
-- **Runtime**: Node.js (v20+).
+- **Runtime**: Node.js (v24 LTS).
 - **Deployment**: Vercel (see `vercel.json`).
 - **Dependencies**: Managed via pnpm (strict pnpm only).
 - **Styling**: Vanilla CSS (unless explicitly requested otherwise).
