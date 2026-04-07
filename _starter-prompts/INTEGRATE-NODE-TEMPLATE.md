@@ -136,3 +136,7 @@ Once this is all completed and project is stable, I will delete `__NODE-PROJECT-
 ---
 
 **Wait to execute. Ask questions first if anything is unclear about the existing project state.**
+
+---
+
+> **Note**: Once complete, don't forget to remind user to install Node 24.14.1 locally (e.g., `nvm install 24.14.1`) and then run `pnpm install` once the integration is complete to ensure local environment matches the new project standards.
