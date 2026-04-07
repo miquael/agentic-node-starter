@@ -1,6 +1,6 @@
-# Gemini Instructions (Pointer)
+# Gemini Agent Instructions (Pointer)
 
 Primary Gemini instructions and project context are located in:
-[.ai/GEMINI.md](file:///.ai/GEMINI.md)
+[.ai/AGENTS.md](file:///.ai/AGENTS.md)
 
 Refer to the [.ai/ manifest](file:///.ai/README.md) for full project context.
