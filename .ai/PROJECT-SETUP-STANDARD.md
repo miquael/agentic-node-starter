@@ -1,7 +1,5 @@
 # Project Setup Standard (Node / pnpm / Vercel / Security)
 
-This document defines the standard setup for all new projects.
-
 Goals:
 - Consistent environments across local, CI, and Vercel
 - Supply-chain security
@@ -88,18 +86,10 @@ Always commit:
 - `pnpm-lock.yaml` (for pnpm projects)
 - `package-lock.json` (for npm projects)
 
-Generate the lockfile by running `pnpm install` after setting up the project. The lockfile ensures reproducible installs and must be committed from the start.
-
 Never:
 - Delete lockfile without reason
 - Regenerate lockfile casually
 - Mix pnpm-lock.yaml and package-lock.json
-
-Lockfiles ensure:
-- Reproducible installs
-- CI matches local
-- No dependency drift
-- Protection against malicious package updates
 
 ---
 
@@ -111,11 +101,6 @@ In `package.json`, include:
   "packageManager": "pnpm@10.24.0"
 }
 ```
-
-This ensures:
-- Consistent pnpm version across all environments
-- Vercel uses the correct package manager
-- All contributors run the same version
 
 ---
 
@@ -242,6 +227,3 @@ npm ci
 - Security > speed
 - Stability > newest version
 
----
-
-# End of Document

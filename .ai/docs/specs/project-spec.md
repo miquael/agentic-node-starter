@@ -1,7 +1,5 @@
 # Functional Project Specification
 
-This is the **Ground Truth** for what this software should do.
-
 ## Project Goal
 To provide a clean, secure, and production-ready Node.js project template for rapid development in 2026.
 
@@ -20,5 +18,3 @@ To provide a clean, secure, and production-ready Node.js project template for ra
 - Unit/E2E test skeletons (to be added in v1.1.0).
 - Authentication (to be added in v1.2.0).
 
----
-*Created as part of the NODE-PROJECT-TEMPLATE v1.0.0*

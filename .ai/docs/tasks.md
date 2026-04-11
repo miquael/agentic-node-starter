@@ -1,7 +1,5 @@
 # Project Task List & Coordination
 
-This scratchpad is the primary coordination point between the Developer and the AI Agent.
-
 ## Milestone 1: Template Initialization (v1.0.0)
 - [x] Create project structure.
 - [x] Set up security scripts.
@@ -18,5 +16,3 @@ This scratchpad is the primary coordination point between the Developer and the 
 - [ ] Add a visual component library (pre-configured).
 - [ ] Implement a local AI wrapper to interact with project docs.
 
----
-*Created as part of the NODE-PROJECT-TEMPLATE v1.0.0*

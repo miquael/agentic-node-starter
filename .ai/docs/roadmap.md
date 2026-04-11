@@ -1,7 +1,5 @@
 # Strategic Roadmap & Vision
 
-This roadmap defines the **Intent** and **Future** of the project, allowing AI agents to make forward-compatible decisions.
-
 ## Current Phase: Node Project Template (v1.0.0)
 The goal is to provide a standardized, secure, and agent-aware foundation for new projects.
 
@@ -21,5 +19,3 @@ The goal is to provide a standardized, secure, and agent-aware foundation for ne
 - **Micro-Services**: Capability to scale from a single monolith to a pnpm-based monorepo.
 - **Cross-Platform**: Support for edge-runtime environments.
 
----
-*Created as part of the NODE-PROJECT-TEMPLATE v1.0.0*

@@ -1,6 +1,4 @@
-# Project Steering & Principles (2026)
-
-This document defines the "Identity" of the project, including non-negotiable architectural and coding constraints.
+# Project Steering & Principles
 
 ## Core Mandates
 - **Package Management**: Use **pnpm only**. Never use `npm` or `yarn`. 
