@@ -15,4 +15,5 @@
 3. **Execution Planning**: Propose a multi-step plan and explain logic *before* executing large code changes.
 4. **Execution**: Code, refactor, and run local tests/lints. Use multimodal/vision tools when building UIs.
 5. **Review & Iterate**: Pause for human validation of quality, correctness, and architecture.
-6. **Documentation**: Keep `.ai/docs/decisions.md` and `.ai/docs/tasks.md` updated.
+6. **Documentation**: When updating files in `.ai/docs/`, keep files lean and concise. Keep `.ai/docs/decisions.md` and `.ai/docs/tasks.md` updated.
+
