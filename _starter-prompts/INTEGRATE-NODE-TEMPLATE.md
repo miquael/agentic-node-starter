@@ -28,7 +28,7 @@ We are standardizing this project's runtime, package management, security postur
 | `GEMINI.md` | Root pointer file. Points Gemini agents to `.ai/AGENTS.md`. |
 | `.cursorrules` | Root pointer file. Points Cursor IDE to `.ai/README.md` and `.ai/.cursorrules`. |
 | `.cursorignore` | Blocks Cursor IDE from indexing `.human/`. |
-| `CHANGE-LOG.md` | Simple date-based changelog. Create if missing, do not overwrite if it exists. |
+| `CHANGELOG.md` | Simple date-based changelog. Create if missing, do not overwrite if it exists. |
 
 ### Root — Optional
 | File | Purpose |
@@ -105,7 +105,7 @@ Execute in this order:
 - Merge `.gitignore` entries from the template. **Never remove existing entries**, only add.
 - Copy `.editorconfig` if missing or outdated.
 - Copy `.env.example` if missing (customize if one already exists).
-- Copy `CHANGE-LOG.md` if missing. Do not overwrite.
+- Copy `CHANGELOG.md` if missing. Do not overwrite.
 - Copy `vercel.json` if the project deploys to Vercel.
 
 ### Step 7 — Clean Install
