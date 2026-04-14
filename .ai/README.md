@@ -6,8 +6,6 @@ Source of truth for AI agents.
 
 - **`/docs/`**: Architecture, roadmap, steering, and decisions.
   - **`/docs/specs/`**: Functional requirements and technical specs.
+  - **`/docs/steering.md`**: Mission-critical technical and stylistic operational boundaries.
 - **`glossary.md`**: Project terminology.
 - **`AGENTS.md`**: Agent workflow, directives, and constraints.
-- **`.antigravity.json`**: Antigravity agent config.
-- **`.cursorrules`**: Cursor IDE rules.
-
