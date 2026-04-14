@@ -4,7 +4,7 @@
 - **Package Management**: Use **pnpm only**. Never use `npm` or `yarn`. 
 - **Module System**: Strict **ESM (ES Modules)**. No CommonJS.
 - **Node Version**: Check `.node-version` for current target.
-- **Security**: All projects must use the `mythic-pnpm-only-security-setup.sh` script to ensure that local `npm` calls are redirected to `pnpm`.
+- **Security**: All projects must ensure that local `npm` calls are redirected to `pnpm`.
 
 ## Architecture Principles
 1. **Composition Over Inheritance**: Prefer mixing functionality via hooks or utilities.
