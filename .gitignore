@@ -33,3 +33,7 @@ pnpm-debug.log*
 
 # Human
 .human
+
+# Personal / project-specific (not part of public template)
+_DESIGN-GUIDES
+_GLOBAL
