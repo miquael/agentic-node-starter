@@ -69,6 +69,7 @@ Vercel's Node 24 instances run their own patch version (e.g., `24.14.1`). Combin
 Execute in this order:
 
 ### Step 1 — Read Context
+- Read `__NODE-PROJECT-TEMPLATE/README.md` to understand what __NODE-PROJECT-TEMPLATE is.
 - Read `__NODE-PROJECT-TEMPLATE/.ai/PROJECT-SETUP-STANDARD.md` to understand the full rationale.
 - Read `__NODE-PROJECT-TEMPLATE/.ai/AGENTS.md` to understand the agent directive format.
 - Scan the existing project to understand what already exists.
