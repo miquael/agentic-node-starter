@@ -18,7 +18,7 @@ Use it to bootstrap new projects with a consistent, secure, AI-ready foundation.
 - **Security-First Design** — OWASP-based security framework embedded as AI-readable docs in `.ai/docs/security/`
 - **Supply Chain Hardened** — `ignore-scripts`, `minimumReleaseAge` (7-day delay on new packages), and frozen lockfile installs by default
 - **Modern Stack** — Node 24 LTS, `pnpm`, strict ESM, Vercel-ready
-- **Multi-Agent Support** — `CLAUDE.md`, `GEMINI.md`, and `.cursorrules` pointer files route every major AI agent to the same context source
+- **Multi-Agent Support** — `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, and `.cursorrules` pointer files route every major AI agent to the same context source
 - **`.human/` Convention** — a private, gitignored directory for human notes, assets, and archives that AI agents are explicitly instructed never to read or modify
 
 ---
@@ -43,6 +43,7 @@ agentic-node-starter/
 ├── _DESIGN-GUIDES/                # Design system docs for AI reference (project-specific, gitignored)
 ├── _STARTER-PROMPTS/              # AI integration prompts — see "How to Use"
 ├── .human/                        # Human-only notes and archives (gitignored, never read by AI)
+├── AGENTS.md                      # → points Codex agents to .ai/AGENTS.md
 ├── CLAUDE.md                      # → points Claude agents to .ai/AGENTS.md
 ├── GEMINI.md                      # → points Gemini agents to .ai/AGENTS.md
 ├── .cursorrules                   # → points Cursor IDE to .ai/
@@ -60,7 +61,7 @@ agentic-node-starter/
 
 ## The `.ai/` Convention
 
-The `.ai/` directory is the single source of truth for all AI agents working in the project. Every major agent is routed here via root pointer files (`CLAUDE.md`, `GEMINI.md`, `.cursorrules`).
+The `.ai/` directory is the single source of truth for all AI agents working in the project. Every major agent is routed here via root pointer files (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursorrules`).
 
 **Key files:**
 - `AGENTS.md` — the primary directive: runtime constraints, workflow loop, and behavioral rules for all agents
@@ -115,6 +116,7 @@ Notable files that are not self-explanatory:
 
 | File | Purpose |
 |---|---|
+| `AGENTS.md` | Pointer file. Routes Codex agents to `.ai/AGENTS.md`. |
 | `CLAUDE.md` | Pointer file. Routes Claude agents to `.ai/AGENTS.md`. |
 | `GEMINI.md` | Pointer file. Routes Gemini agents to `.ai/AGENTS.md`. |
 | `.cursorrules` | Routes Cursor IDE to `.ai/` for project context. |
