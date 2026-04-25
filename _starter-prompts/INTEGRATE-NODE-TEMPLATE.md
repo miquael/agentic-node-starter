@@ -24,6 +24,7 @@ We are standardizing this project's runtime, package management, security postur
 | `pnpm-workspace.yaml` | Sets `minimumReleaseAge: 10080` (7-day delay on new packages). Supply-chain guardrail. |
 | `.gitignore` | Standard ignores. **Do NOT remove** any existing entries. Only add missing ones from the template. Ensure `.human` is listed. |
 | `.editorconfig` | Enforces consistent formatting (2-space indent, UTF-8, LF line endings). |
+| `AGENTS.md` | Root pointer file. Points Codex (or general) agents to `.ai/AGENTS.md`. |
 | `CLAUDE.md` | Root pointer file. Points Claude agents to `.ai/AGENTS.md`. |
 | `GEMINI.md` | Root pointer file. Points Gemini agents to `.ai/AGENTS.md`. |
 | `.cursorrules` | Root pointer file. Points Cursor IDE to `.ai/README.md` and `.ai/.cursorrules`. |
@@ -93,7 +94,7 @@ Execute in this order:
   - If separate `.ai/CLAUDE.md`, `.ai/GEMINI.md`, or `.ai/HUMAN.md` files exist, merge their unique content into `AGENTS.md` and delete them.
   - If `.ai/specs/` exists separately from `.ai/docs/`, move it into `.ai/docs/specs/`.
   - Ensure `.ai/README.md` accurately reflects the final directory structure.
-- Ensure root `CLAUDE.md` and `GEMINI.md` are pointer files to `.ai/AGENTS.md`.
+- Ensure root `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md` are pointer files to `.ai/AGENTS.md`.
 - Ensure `.cursorrules` and `.cursorignore` are in place.
 
 ### Step 5 — Set Up `.human/`
@@ -128,7 +129,7 @@ Execute in this order:
 - [ ] `pnpm-workspace.yaml` has `minimumReleaseAge: 10080`
 - [ ] No `package-lock.json` or `yarn.lock` exists
 - [ ] `.ai/AGENTS.md` exists with consolidated directives
-- [ ] Root `CLAUDE.md` and `GEMINI.md` point to `.ai/AGENTS.md`
+- [ ] Root `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md` point to `.ai/AGENTS.md`
 - [ ] `.human/` exists with its README, is in `.gitignore`, and is in `.cursorignore`
 - [ ] `pnpm install` completes successfully
 
