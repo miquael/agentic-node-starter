@@ -2,7 +2,7 @@
 
 A production-ready Node.js project template with AI agent steering built in from day one.
 
-<img src="README.assets/AGENTIC-NODE-STARTER.png" alt="Agentic Node Starter overview infographic" />
+<img src="README.assets/AGENTIC-NODE-STARTER.png" alt="Agentic Node Starter overview infographic" width="900" />
 
 ---
 
@@ -184,7 +184,7 @@ After integration, populate `llms.txt` with your real project description and pa
 
 ## Design Guides
 
-![Design guide demo](_DESIGN-GUIDES/DESIGN-GUIDE-DEMO.png)
+<img src="_DESIGN-GUIDES/DESIGN-GUIDE-DEMO.png" alt="Design guide demo" width="900" />
 
 The `_DESIGN-GUIDES/` directory is a placeholder for project-specific design system documentation — typography, color systems, layout, icon systems, component patterns — formatted for AI agent consumption. Currently includes a generic best 2026 Node.js design principles doc. Replace or add your own design system docs here.
 
