@@ -35,7 +35,7 @@ pnpm-debug.log*
 .human
 
 # Personal / project-specific (not part of public template)
-_DESIGN-GUIDES
+_DESIGN-GUIDES/GAIO/
 _GLOBAL/CLAUDE.md
 _STARTER-PROMPTS/INTEGRATE-DESIGN-GUIDES.md
 _STARTER-PROMPTS/UPDATE-DOCS.md
