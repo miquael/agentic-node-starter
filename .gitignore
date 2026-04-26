@@ -36,4 +36,8 @@ pnpm-debug.log*
 
 # Personal / project-specific (not part of public template)
 _DESIGN-GUIDES
-_GLOBAL
+_GLOBAL/CLAUDE.md
+LICENSE-MG.md
+_STARTER-PROMPTS/INTEGRATE-DESIGNS-GUIDES.md
+_STARTER-PROMPTS/INTEGRATE-DESIGN-GUIDES.md
+UPDATE-DOCS.md
