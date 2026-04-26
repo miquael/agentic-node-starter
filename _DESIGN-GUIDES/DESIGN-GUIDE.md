@@ -2,6 +2,8 @@
 
 > A framework-agnostic design reference for building modern Node.js web interfaces. Use this as a starting point — adapt it to your project's specific needs. Formatted for AI agent consumption.
 
+Reference: see `DESIGN-GUIDE-DEMO.png` for a simple example of a Node.js front page designed using these principles.
+
 ---
 
 ## Design Philosophy
