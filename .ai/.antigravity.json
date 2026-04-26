@@ -1,11 +1,11 @@
 {
   "docs_path": ".ai/docs",
-  "specs_path": ".ai/specs",
-  "agent_instructions": ".ai/docs/steering.md",
-  "glossary": ".ai/glossary.md",
+  "specs_path": ".ai/docs/specs",
+  "agent_instructions": ".ai/docs/STEERING.md",
+  "glossary": ".ai/DOMAIN-LANGUAGE.md",
   "project_rules": [
     ".ai/.cursorrules",
-    ".ai/CLAUDE.md"
+    ".ai/AGENTS.md"
   ],
   "preferences": {
     "show_plan_first": true,

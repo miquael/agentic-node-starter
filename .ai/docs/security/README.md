@@ -39,12 +39,12 @@ sub-documents
 
 load only what is relevant to your current task:
 
-- [principles.md](principles.md) — OWASP foundation, core security principles, threat modeling, secure design patterns
-- [owasp-top10.md](owasp-top10.md) — OWASP Top 10 applied (2025)
-- [build-playbook.md](build-playbook.md) — build-time and testing security practices
-- [ops-playbook.md](ops-playbook.md) — deployment and operations security
-- [ai-automation-risks.md](ai-automation-risks.md) — AI agents, automation, and prompt injection risks
-- [checklist.md](checklist.md) — repeatable security checklist for all projects
+- [PRINCIPLES.md](PRINCIPLES.md) — OWASP foundation, core security principles, threat modeling, secure design patterns
+- [OWASP-TOP10.md](OWASP-TOP10.md) — OWASP Top 10 applied (2025)
+- [BUILD-PLAYBOOK.md](BUILD-PLAYBOOK.md) — build-time and testing security practices
+- [OPS-PLAYBOOK.md](OPS-PLAYBOOK.md) — deployment and operations security
+- [AI-AUTOMATION-RISKS.md](AI-AUTOMATION-RISKS.md) — AI agents, automation, and prompt injection risks
+- [CHECKLIST.md](CHECKLIST.md) — repeatable security checklist for all projects
 
 ⸻
 

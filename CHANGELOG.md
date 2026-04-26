@@ -3,6 +3,8 @@
 Dates format: MM/DD/YYYY
 All notable changes to this project will be documented in this file.
 
+> **Template**: Replace the entries below with your own project history. Maintain the date-based format above. Delete this note once you start tracking real changes.
+
 ---
 
 ## [04/07/2026]

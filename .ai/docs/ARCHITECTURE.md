@@ -9,7 +9,7 @@
 - **Middleware**: For request handling and security headers.
 - **Services**: Business logic decoupled from external interfaces.
 - **Utils**: Reusable, pure functional helpers.
-- **Schemas**: Data structure definitions (see `schema.md`).
+- **Schemas**: Data structure definitions (see `SCHEMA.md`).
 
 ## Technical Stack
 - **Runtime**: Node.js (v24 LTS).

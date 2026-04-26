@@ -1,10 +1,12 @@
 {
-  "name": "project-name",
+  "name": "agentic-node-starter",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.24.0",
   "engines": {
     "node": "24.x"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "echo 'No build step configured'"
+  }
 }

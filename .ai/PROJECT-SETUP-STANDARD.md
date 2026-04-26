@@ -170,10 +170,10 @@ Use this if you want strict dependency reproducibility on Vercel.
 
 # 9 — Template Files
 
-The `__PROJECT-TEMPLATE` folder includes:
+The `agentic-node-starter` root includes:
 
 ```
-__PROJECT-TEMPLATE/
+agentic-node-starter/
 ├── .npmrc
 ├── .nvmrc
 ├── .node-version
@@ -185,7 +185,7 @@ __PROJECT-TEMPLATE/
 ├── vercel.json (optional)
 ├── README.md
 ├── LICENSE.md (optional)
-└── PROJECT-SETUP-STANDARD.md
+└── .ai/PROJECT-SETUP-STANDARD.md
 ```
 
 ---

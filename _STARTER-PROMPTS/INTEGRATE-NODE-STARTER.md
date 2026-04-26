@@ -1,6 +1,6 @@
-# Integrate __NODE-PROJECT-TEMPLATE
+# Integrate agentic-node-starter
 
-I have dropped the `__NODE-PROJECT-TEMPLATE` directory (and all its contents) into the root of this project. Your job is to integrate these template files into the existing project structure to standardize it for **Node 24.14.1**, **strict pnpm**, and **Vercel-optimized deployment**.
+I have dropped the `agentic-node-starter` directory (and all its contents) into the root of this project. Your job is to integrate these template files into the existing project structure to standardize it for **Node 24.14.1**, **strict pnpm**, and **Vercel-optimized deployment**.
 
 Some of these files may already exist in this project. Some may be new. You must evaluate each one and merge or create as needed — do not blindly overwrite existing project-specific content.
 
@@ -44,10 +44,10 @@ We are standardizing this project's runtime, package management, security postur
 | `AGENTS.md` | **Single source of truth** for all AI agent directives: runtime constraints, pnpm rules, workflow loop, and the `.human/` ignore rule. |
 | `README.md` | Manifest describing the `.ai/` directory structure. |
 | `.cursorrules` | Cursor-specific IDE behavior rules. |
-| `glossary.md` | Project-specific terminology to prevent AI semantic drift. Customize per project. |
+| `DOMAIN-LANGUAGE.md` | Project terminology and shared language. Prevents AI semantic drift. Customize per project. |
 | `PROJECT-SETUP-STANDARD.md` | Full reference doc explaining *why* each config choice was made. Read this for context. |
-| `docs/` | Architectural context, steering constraints, decisions, tasks, roadmap. |
-| `docs/specs/` | Functional requirements and technical specifications. |
+| `docs/` | Architectural context, steering constraints, decisions, tasks, roadmap. Standard docs use UPPERCASE filenames (e.g., `STEERING.md`, `ARCHITECTURE.md`). |
+| `docs/specs/` | Functional requirements and technical specifications (`PROJECT-SPEC.md`, `PROJECT-NOTES.md`). |
 
 ### `.human/` Directory — Human-Only Archive (Required)
 | File / Dir | Purpose |
@@ -70,9 +70,9 @@ Vercel's Node 24 instances run their own patch version (e.g., `24.14.1`). Combin
 Execute in this order:
 
 ### Step 1 — Read Context
-- Read `__NODE-PROJECT-TEMPLATE/README.md` to understand what __NODE-PROJECT-TEMPLATE is.
-- Read `__NODE-PROJECT-TEMPLATE/.ai/PROJECT-SETUP-STANDARD.md` to understand the full rationale.
-- Read `__NODE-PROJECT-TEMPLATE/.ai/AGENTS.md` to understand the agent directive format.
+- Read `agentic-node-starter/README.md` to understand what `agentic-node-starter` is.
+- Read `agentic-node-starter/.ai/PROJECT-SETUP-STANDARD.md` to understand the full rationale.
+- Read `agentic-node-starter/.ai/AGENTS.md` to understand the agent directive format.
 - Scan the existing project to understand what already exists.
 
 ### Step 2 — Enforce pnpm
@@ -93,6 +93,8 @@ Execute in this order:
   - Ensure `AGENTS.md` exists and contains the consolidated directives (not separate CLAUDE/GEMINI/HUMAN files inside `.ai/`).
   - If separate `.ai/CLAUDE.md`, `.ai/GEMINI.md`, or `.ai/HUMAN.md` files exist, merge their unique content into `AGENTS.md` and delete them.
   - If `.ai/specs/` exists separately from `.ai/docs/`, move it into `.ai/docs/specs/`.
+  - If a `glossary.md` exists in `.ai/`, rename it to `DOMAIN-LANGUAGE.md`.
+  - Ensure all standard docs in `.ai/docs/` use UPPERCASE filenames (`STEERING.md`, `ARCHITECTURE.md`, etc.).
   - Ensure `.ai/README.md` accurately reflects the final directory structure.
 - Ensure root `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md` are pointer files to `.ai/AGENTS.md`.
 - Ensure `.cursorrules` and `.cursorignore` are in place.
@@ -116,7 +118,7 @@ Execute in this order:
 - Verify the install succeeds without errors.
 
 ### Step 8 — Delete the Template
-- Remove the `__NODE-PROJECT-TEMPLATE/` directory and `_starter-prompts/` directory from the project root. They are no longer needed.
+- Remove the `agentic-node-starter/` directory and `_STARTER-PROMPTS/` directory from the project root. They are no longer needed.
 
 ---
 
@@ -133,12 +135,10 @@ Execute in this order:
 - [ ] `.human/` exists with its README, is in `.gitignore`, and is in `.cursorignore`
 - [ ] `pnpm install` completes successfully
 
-Once this is all completed and project is stable, I will delete `__NODE-PROJECT-TEMPLATE/`
-
 ---
 
 **Wait to execute. Ask questions first if anything is unclear about the existing project state.**
 
 ---
 
-> **Note**: Once complete, don't forget to remind user to install Node 24.14.1 locally (e.g., `nvm install 24.14.1`) and then run `pnpm install` once the integration is complete to ensure local environment matches the new project standards.
+> **Note**: Once complete, remind the user to install Node 24.14.1 locally (e.g., `nvm install 24.14.1`) and run `pnpm install` to ensure the local environment matches the new project standards.
