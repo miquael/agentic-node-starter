@@ -1,0 +1,26 @@
+# [Project Name]
+
+> [One-sentence description of what this project or site does and who it's for.]
+
+This file helps AI assistants, agents, and crawlers understand the structure and purpose of this site. See `/llms-full.txt` for full content (if available).
+
+## Overview
+
+- [Home](/): [Brief description of the main page]
+- [About](/about): [Description of the about page]
+- [Contact](/contact): [Description of the contact page]
+
+## Documentation
+
+- [Getting Started](/docs/getting-started): [How to install and run the project]
+- [API Reference](/docs/api): [Full API documentation]
+- [Configuration](/docs/configuration): [Available configuration options]
+
+## Key Features
+
+- [Feature Name](/feature): [What this feature does]
+- [Feature Name](/feature): [What this feature does]
+
+## Optional
+
+- [llms-full.txt](/llms-full.txt): Full site content in flat Markdown (if published)

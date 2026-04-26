@@ -42,9 +42,12 @@ agentic-node-starter/
 │       ├── security/              # OWASP-based security orientation (6 sub-docs)
 │       └── specs/                 # Functional specs and project notes
 ├── _DESIGN-GUIDES/                # Generic design guide committed; add project-specific guides here (gitignored)
+├── _SEO_AEO_GUIDES/               # SEO & AEO reference guide — practices, llms.txt, structured data, Next.js recommendations
 ├── _GLOBAL/                       # System-level AI agent configs — e.g. copy CLAUDE.md to ~/.claude/CLAUDE.md
 ├── _STARTER-PROMPTS/              # AI integration prompts — see "How to Use"
 ├── .human/                        # Human-only notes and archives (gitignored, never read by AI)
+├── llms.txt                       # AI discovery file — served at /llms.txt for AI crawlers and agents
+├── robots.txt                     # Crawler directives — allows all bots by default, AI-bot entries included
 ├── AGENTS.md                      # → points Codex agents to .ai/AGENTS.md
 ├── CLAUDE.md                      # → points Claude agents to .ai/AGENTS.md
 ├── GEMINI.md                      # → points Gemini agents to .ai/AGENTS.md
@@ -119,6 +122,8 @@ Notable files that are not self-explanatory:
 
 | File | Purpose |
 |---|---|
+| `llms.txt` | AI discovery file. Served at `/llms.txt` — summarizes your site for AI crawlers and agents. Populate before deploying. |
+| `robots.txt` | Crawler directives. Allows all bots by default. Update the `Sitemap:` URL before deploying. |
 | `AGENTS.md` | Pointer file. Routes Codex agents to `.ai/AGENTS.md`. |
 | `CLAUDE.md` | Pointer file. Routes Claude agents to `.ai/AGENTS.md`. |
 | `GEMINI.md` | Pointer file. Routes Gemini agents to `.ai/AGENTS.md`. |
@@ -157,8 +162,9 @@ Notable files that are not self-explanatory:
 4. Update `.ai/AGENTS.md` with any project-specific agent directives
 5. Add your design system docs to `_DESIGN-GUIDES/`
 6. Populate `.human/` with any personal notes or assets
-7. Run `pnpm install`
-8. Delete `_STARTER-PROMPTS/` once setup is complete
+7. Populate `llms.txt` with your real project name, description, and page list; update the `Sitemap:` URL in `robots.txt`
+8. Run `pnpm install`
+9. Delete `_STARTER-PROMPTS/` once setup is complete — or keep `SEO-AEO-SETUP.md` to run once the project has real content
 
 ### Option B — AI-assisted integration (recommended for existing projects)
 
@@ -170,11 +176,25 @@ Notable files that are not self-explanatory:
 
 The starter prompts are designed to be non-destructive — they evaluate existing project state before making changes and will not blindly overwrite project-specific content.
 
+After integration, populate `llms.txt` with your real project description and page list, and update the `Sitemap:` URL in `robots.txt`. Use `_STARTER-PROMPTS/SEO-AEO-SETUP.md` to run a full SEO/AEO audit once the project has real content.
+
 ---
 
 ## Design Guides
 
 The `_DESIGN-GUIDES/` directory is a placeholder for project-specific design system documentation — typography, color systems, layout, icon systems, component patterns — formatted for AI agent consumption. Currently includes a generic best 2026 Node.js design principles doc. Replace or add your own design system docs here.
+
+---
+
+## SEO & AEO Guides
+
+The `_SEO_AEO_GUIDES/` directory contains a reference guide covering modern SEO and AEO (AI Engine Optimization) practices as of 2026 — structured data, `llms.txt`, `robots.txt`, OpenGraph meta, semantic HTML, Core Web Vitals, and when to add Next.js for public-facing pages.
+
+Two template files are included at the project root and should be populated before deploying:
+- `llms.txt` — AI discovery file, served at `/llms.txt`
+- `robots.txt` — crawler directives, served at `/robots.txt`
+
+A ready-to-use AI audit prompt is available at `_STARTER-PROMPTS/SEO-AEO-SETUP.md`.
 
 ---
 

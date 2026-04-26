@@ -1,0 +1,38 @@
+# robots.txt
+# Controls which web crawlers and AI bots can access which paths on this site.
+# Reference: https://www.robotstxt.org/
+
+# Default: allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Block access to private or admin paths (uncomment and customize as needed)
+# Disallow: /admin
+# Disallow: /api/private
+# Disallow: /_next/
+
+# AI crawlers — allowed by default.
+# Uncomment Disallow lines below to opt out of AI training or synthesis.
+
+User-agent: GPTBot
+Allow: /
+# Disallow: /
+
+User-agent: ClaudeBot
+Allow: /
+# Disallow: /
+
+User-agent: PerplexityBot
+Allow: /
+# Disallow: /
+
+User-agent: GoogleOther
+Allow: /
+# Disallow: /
+
+User-agent: Applebot-Extended
+Allow: /
+# Disallow: /
+
+# Sitemap location — update to your actual domain before deploying
+Sitemap: https://yourdomain.com/sitemap.xml
